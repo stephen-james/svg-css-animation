@@ -17,7 +17,7 @@ module.exports = {
     }
   },
   images: {
-    src: src + '/images/**',
+    src: src + '/images/*.{bmp,png,jpg,gif,webp,svg,ico}',
     dest: dest + '/images'
   },
   markup: {
