@@ -1,4 +1,12 @@
-.DS_Store
-build
-Desktop.ini
 node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+.DS_Store
+.idea/
+.iml
+.ipr
+.iws
+*.orig
+*.compiled.js
