@@ -11,6 +11,7 @@ gulp.task('production', ['karma'], function(){
       //'iconFont',
       'fonts',
       'minifyCss',
+      'jshint',
       'uglifyJs'
   ]);
 
