@@ -26,10 +26,10 @@ var browserifyTask = function(devMode) {
     if(devMode) {
       // Add watchify args and debug (sourcemaps) option
       _.extend(bundleConfig, watchify.args, { debug: true });
-      // A watchify require/external bug that prevents proper recompiling,
-      // so (for now) we'll ignore these options during development. Running
-      // `gulp browserify` directly will properly require and externalize.
-      bundleConfig = _.omit(bundleConfig, ['external', 'require']);
+      //// A watchify require/external bug that prevents proper recompiling,
+      //// so (for now) we'll ignore these options during development. Running
+      //// `gulp browserify` directly will properly require and externalize.
+      //bundleConfig = _.omit(bundleConfig, ['external', 'require']);
     }
 
     var b = browserify(bundleConfig);
@@ -59,13 +59,17 @@ var browserifyTask = function(devMode) {
       // Rebundle on update
       b.on('update', bundle);
       bundleLogger.watch(bundleConfig.outputName);
-    } else {
-      // Sort out shared dependencies.
-      // b.require exposes modules externally
-      if(bundleConfig.require) b.require(bundleConfig.require);
-      // b.external excludes modules from the bundle, and expects
-      // they'll be available externally
-      if(bundleConfig.external) b.external(bundleConfig.external);
+    }
+
+    // Sort out shared dependencies.
+    // b.require exposes modules externally
+    if (bundleConfig.require) {
+        b.require(bundleConfig.require);
+    }
+    // b.external excludes modules from the bundle, and expects
+    // they'll be available externally
+    if (bundleConfig.external) {
+        b.external(bundleConfig.external);
     }
 
     return bundle();
