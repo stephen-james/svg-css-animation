@@ -15,3 +15,5 @@ eg.
     uE002-linkedin.svg
 
 See the tagged commit `upstream-base` for an example of this with files populated
+
+You will also need to import the generated `_icons.sass` file in `src/sass` in the main `app.sass`
