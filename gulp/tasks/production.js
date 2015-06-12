@@ -9,6 +9,7 @@ gulp.task('production', ['karma'], function(){
       'images',
       // to generate a font from svg, uncomment and follow steps in src/icons/README.md
       //'iconFont',
+      'fonts',
       'minifyCss',
       'uglifyJs'
   ]);

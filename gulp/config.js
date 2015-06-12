@@ -1,4 +1,4 @@
-var dest = "./build";
+var dest = './build';
 var src = './src';
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/sass/**/*.{sass,scss}",
+    src: src + '/sass/**/*.{sass,scss}',
     dest: dest,
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
@@ -17,12 +17,16 @@ module.exports = {
     }
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + '/images/**',
+    dest: dest + '/images'
   },
   markup: {
-    src: src + "/htdocs/**",
+    src: src + '/htdocs/**',
     dest: dest
+  },
+  markup: {
+    src: src + '/fonts/*.{eot,svg,ttf,woff}',
+    dest: dest + '/fonts'
   },
   iconFonts: {
     name: 'Gulp Starter Icons',
