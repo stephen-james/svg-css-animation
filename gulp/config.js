@@ -24,7 +24,7 @@ module.exports = {
     src: src + '/htdocs/**',
     dest: dest
   },
-  markup: {
+  fonts: {
     src: src + '/fonts/*.{eot,svg,ttf,woff}',
     dest: dest + '/fonts'
   },
