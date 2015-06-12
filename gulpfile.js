@@ -1,4 +1,10 @@
 /*
+  The gulp strategy taken here is based on https://github.com/greypants/gulp-starter
+  and extended via the fork https://github.com/stephen-james/gulp-starter
+  please find relevant license for the original gulp-starter project in the `gulp` folder
+*/
+
+/*
   gulpfile.js
   ===========
   Rather than manage one giant configuration file responsible
