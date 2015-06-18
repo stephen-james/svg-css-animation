@@ -3,7 +3,11 @@ gulp-starter
 
 Starter Gulp + Browserify project forked from https://github.com/greypants/gulp-starter with the intention of changing it
 for more general use, including code quality checks and jasmine for testing (as opposed to upstream which uses mocha, chai).
- 
+
+## Usage
+
+`git clone https://github.com/stephen-james/gulp-starter.git your-new-repo-name`
+
 ## Run gulp and be amazed.
 
 just run the `default` gulp task with:
@@ -39,7 +43,7 @@ The task calls `gulp-iconfont` and passes the options we've configured in [`gulp
   +icon--twitter // (@include in .scss syntax)
 ```
 
-or 
+or
 
 ```html
 <span class="icon -twitter"></span>
@@ -47,7 +51,7 @@ or
 
 #### Production files
 
-There is also a `production` task you can run: 
+There is also a `production` task you can run:
 ```
 gulp production
 ```
@@ -64,6 +68,6 @@ To run the tests and start monitoring files:
 Want to just run `karma start`? Either add `alias karma="./node_modules/karma/bin/karma"` to your shell config or install the karma command line interface globally with `npm install -g karma-cli`.
 
 
--- 
+--
 
 the original gulp-starter was Made with ♥ at [Viget](http://viget.com)!
