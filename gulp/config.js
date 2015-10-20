@@ -1,5 +1,6 @@
 var dest = './build';
 var src = './src';
+var svg = require('svg-browserify');
 
 module.exports = {
     browserSync: {
@@ -60,6 +61,7 @@ module.exports = {
             entries: src + '/javascript/app.js',
             dest: dest,
             outputName: 'app.js',
+            transform: svg,
             // list of externally available modules to exclude from the bundle
             external: ['underscore']
         }]
